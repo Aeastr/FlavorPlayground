@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2D73C7A02D1217BB004890E1 /* Garnish in Frameworks */ = {isa = PBXBuildFile; productRef = 2D73C79F2D1217BB004890E1 /* Garnish */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2DC6D6BB2D12115D002CCF25 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D73C7A02D1217BB004890E1 /* Garnish in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = FlavorPlayground;
 			packageProductDependencies = (
+				2D73C79F2D1217BB004890E1 /* Garnish */,
 			);
 			productName = FlavorPlayground;
 			productReference = 2DC6D6A42D12115B002CCF25 /* FlavorPlayground.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 2DC6D69B2D12115B002CCF25;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2D73C79E2D1217BB004890E1 /* XCRemoteSwiftPackageReference "Garnish" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2DC6D6A52D12115B002CCF25 /* Products */;
 			projectDirPath = "";
@@ -414,7 +423,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = world.aethers.FlavorPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -453,7 +463,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = world.aethers.FlavorPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -591,6 +602,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2D73C79E2D1217BB004890E1 /* XCRemoteSwiftPackageReference "Garnish" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Aeastr/Garnish.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2D73C79F2D1217BB004890E1 /* Garnish */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2D73C79E2D1217BB004890E1 /* XCRemoteSwiftPackageReference "Garnish" */;
+			productName = Garnish;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2DC6D69C2D12115B002CCF25 /* Project object */;
 }
